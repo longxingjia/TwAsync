@@ -123,9 +123,9 @@ TwAsyncHttpClient.getDefaultInstance().executeJSONArray(new AsyncHttpGet(strUrl)
 
 
 
-### 与原库功能对比 (contrast)
+### 与原库功能对比 
 
-| 功能                         | HiCompressor | Compressor |
+| 功能                         | TwAsync | AndroidAsync |
 | ---------------------------- | ------------ | ---------- |
 | Socket 客户端+ Socket 服务端 | 支持         | 支持       |
 | HTTP 客户端+服务端           | 支持         | 支持       |
