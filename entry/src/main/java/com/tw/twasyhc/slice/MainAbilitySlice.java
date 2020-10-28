@@ -17,6 +17,7 @@ import ohos.agp.utils.Color;
 import ohos.agp.utils.TextAlignment;
 import ohos.media.image.ImageSource;
 import ohos.media.image.PixelMap;
+import ohos.utils.zson.ZSONArray;
 import ohos.utils.zson.ZSONObject;
 
 import java.io.File;
@@ -104,6 +105,18 @@ public class MainAbilitySlice extends AbilitySlice {
                 Logger.e("ZSONObject is : " + result.toString());
             }
         });
+
+        TwAsyncHttpClient.getDefaultInstance().executeJSONArray(new AsyncHttpGet(strUrl), new TwAsyncHttpClient.JSONArrayCallback() {
+            @Override
+            public void onCompleted(Exception e, AsyncHttpResponse source, ZSONArray result) {
+                if (e != null) {
+                    e.printStackTrace();
+                    return;
+
+                }
+                Logger.e("ZSONObject is : " + result.toString());
+            }
+        })
 
     }
 
