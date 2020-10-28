@@ -1,6 +1,6 @@
 # TwAsyn
 
-  TwAsync是一个低级别的网络协议库。如果你在找一个容易使用，高级别，Hi软件，http请求库.
+  TwAsync是一个低级别的网络协议库。这是一个容易使用，高级别，Hi软件，http请求库.
   项目参考AndroidAsync
 
 特点：
